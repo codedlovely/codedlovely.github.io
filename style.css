@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Spectral:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+html {
+    scroll-padding-top: 90px;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spectral', serif;
+    font-size: large;
+    color: #505050;
+    background-color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', sans-serif;
+    margin-bottom: 0.5rem;
+    color: #ff7575;
+}
+h1,
+h2 {
+    font-size: 2.2rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+a {
+    color: #ff7575;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+hr {
+    height: 0.2rem;
+    min-width: 300px;
+    max-width: 300px;
+    margin: 0 auto 3rem;
+    padding: 0;
+    border: none;
+    background: linear-gradient(0.25turn, #ff7575, #ffffff, #ff7575);
+}
+
+/* header */
+#header {
+    padding: 10px 100px 10px;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #ffffffe6;
+    box-shadow: 0 0 6px #ffcaca;
+}
+#sitelogo {
+    font-family: 'Corben', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+#sitelogo span {
+    font-size: small;
+    color: #ffcaca;
+}
+#sitelogo a {
+    text-decoration: none;
+}
+#sitelogo img {
+    background-color: #ffffff;
+    color: #ff7575;
+    min-width: 160px;
+    max-width: 220px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+#navimenu a {
+    font-family: 'Corben', sans-serif;
+    font-weight: normal;
+    color: #505050;
+    text-decoration: none;
+}
+#navimenu a:hover {
+    color: #ff7575;
+    text-decoration: underline #ff7575;
+}
+#header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+}
+
+/* hero */
+#hero {
+    padding: 60px 100px;
+    background-color: #ff7575;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+#hero img {
+    max-height: 220px;
+    border-radius: 50%;
+    border: 4px solid #ff0000;
+}
+#hero p {
+    font-family: 'Corben', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 2.2em;
+    margin: 0 0.8rem;
+    text-align: left;
+    text-shadow: 2px 2px 0 #ff0000;
+}
+#hero span {
+    margin: 0 0.2rem;
+    padding: 0 1rem;
+    background-color: #ffffff;
+    color: #ff7575;
+    border-radius: 1rem;
+    text-shadow: none;
+    box-shadow: 2px 2px 0 #ff0000;
+}
+
+/* project */
+#project {
+    text-align: center;
+    padding: 10px 100px 60px;
+}
+#projectlist {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    max-width: 300px;
+}
+.project:hover {
+    box-shadow: 1px 1px 4px #ff7575;
+}
+.project img {
+    width: 100%;
+    object-fit: contain;
+}
+.project p {
+    margin: 0.3rem auto 0.6rem;
+}
+.project a:hover {
+    text-decoration: none;
+}
+
+/* about */
+#about {
+    text-align: center;
+    margin: 0 auto 60px;
+    padding: 10px auto 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ff7575;
+    color: #ffffff
+}
+#about h2 {
+    color: #ffffff;
+}
+#about hr {
+    background: linear-gradient(0.25turn, #ffffff, #ff7575, #ffffff);
+}
+#aboutcontainer {
+    max-width: 500px;
+}
+#about p {
+    text-align: left;
+    font-size: 1.3rem;
+}
+#about .resume {
+    margin: 1rem;
+    padding: 0.4rem 1.4rem 0.6rem;
+    border: 3px solid #ffffff;
+    border-radius: 1.8rem;
+    background-color: #ffffff;
+    color: #ff7575;
+    font-family: 'Corben', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#about .resume:hover {
+    border: 3px solid #ffcaca;
+    background-color: #ffcaca;
+    color: #ff7575;
+    text-decoration: none;
+}
+
+/* contact */
+#contact {
+    text-align: center;
+    padding: 10px 100px 60px;
+}
+#contactinfo ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#contactinfo ul li {
+    font-size: x-large;
+    line-height: 3rem;
+}
+
+/* footer */
+#footer {
+    padding: 40px 100px;
+    background-color: #ffcaca;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Corben', sans-serif;
+}
+#footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 1.4rem;
+}
+#footer i {
+    font-size: 2.4rem;
+    color: #505050;
+}
+#footer i:hover {
+    color: #ff7575;
+}
