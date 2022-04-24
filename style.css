@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Spectral:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 
 html {
-    scroll-padding-top: 90px;
+    scroll-padding-top: 70px;
     scroll-behavior: smooth;
 }
 body {
@@ -50,7 +50,7 @@ hr {
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: #ffffffe6;
+    background-color: #ffffffe0;
     box-shadow: 0 0 6px #ffcaca;
 }
 #sitelogo {
@@ -60,7 +60,7 @@ hr {
 }
 #sitelogo span {
     font-size: small;
-    color: #ffcaca;
+    color: #ff0000;
 }
 #sitelogo a {
     text-decoration: none;
@@ -171,7 +171,7 @@ hr {
 /* about */
 #about {
     text-align: center;
-    margin: 0 auto 60px;
+    margin: 0 auto;
     padding: 10px auto 100px;
     display: flex;
     flex-direction: column;
@@ -188,13 +188,14 @@ hr {
 }
 #aboutcontainer {
     max-width: 500px;
+    min-height: fit-content;
 }
 #about p {
     text-align: left;
     font-size: 1.3rem;
 }
 #about .resume {
-    margin: 1rem;
+    margin: 1rem auto 3rem;
     padding: 0.4rem 1.4rem 0.6rem;
     border: 3px solid #ffffff;
     border-radius: 1.8rem;
@@ -205,15 +206,16 @@ hr {
     font-size: 1.2rem;
 }
 #about .resume:hover {
-    border: 3px solid #ffcaca;
-    background-color: #ffcaca;
-    color: #ff7575;
+    border: 3px solid #ffffff;
+    background-color: #ff7575;
+    color: #ffffff;
     text-decoration: none;
 }
 
 /* contact */
 #contact {
     text-align: center;
+    margin: 0;
     padding: 10px 100px 60px;
 }
 #contactinfo ul {
