@@ -268,59 +268,6 @@ hr {
     }
 }
 
-/* blog */
-#blog {
-    text-align: center;
-    margin: 0;
-    padding: 1rem 8rem 6rem;
-    background-color: #ffcaca;
-}
-#blog hr {
-    background: linear-gradient(0.25turn, #ff7575, #ffcaca, #ff7575);
-}
-#bloglist {
-    margin: 0 auto;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
-    flex-wrap: nowrap;
-}
-.blogpost {
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    gap: 10px;
-    background-color: #ffffff;
-    border-radius: 1rem;
-    text-align: left;
-}
-.blogpost:hover {
-    box-shadow: 1px 1px 4px #ff7575;
-}
-.blogpost h4 {
-    text-align: left;
-    margin: 0.8rem;
-}
-.blogpost p {
-    margin: 0.5rem;
-}
-.blogpost a:hover {
-    text-decoration: none;
-}
-@media (max-width: 800px) {
-    #blog {
-        padding: 1rem 1rem 6rem;
-    }
-    #blog h2 {
-        text-align: center;
-    }
-}
-
 /* footer */
 #footer {
     padding: 2rem 8rem 2rem;
