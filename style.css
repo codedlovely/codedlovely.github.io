@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Spectral:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 
 html {
-    scroll-padding-top: 70px;
+    scroll-padding-top: 3.7rem;
     scroll-behavior: smooth;
 }
 body {
@@ -190,6 +190,9 @@ hr {
     #project h2 {
         text-align: center;
     }
+    .project p {
+        text-align: center;
+    }
 }
 
 /* about */
@@ -308,6 +311,7 @@ hr {
 }
 .blogpost p {
     margin: 0.5rem;
+    padding-bottom: 0.8rem;
 }
 .blogpost a:hover {
     text-decoration: none;
