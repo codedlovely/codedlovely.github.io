@@ -43,7 +43,7 @@ hr {
 
 /* header */
 #header {
-    padding: 10px 100px 10px;
+    padding: 0.6rem 9rem;
     display: flex;
     flex: 0 1 auto;
     justify-content: space-between;
@@ -93,6 +93,11 @@ hr {
     align-items: center;
     gap: 24px;
 }
+@media (max-width: 800px) {
+    #header {
+        padding: 0.6rem 2rem;
+    }
+}
 
 #container {
     margin: 0;
@@ -101,11 +106,11 @@ hr {
 
 /* hero */
 #hero {
-    padding: 60px 100px;
+    padding: 4rem 9rem;
     background-color: #ff7575;
     color: #ffffff;
     display: flex;
-    flex: 1 1 auto;
+/*    flex: 1 1 auto;*/
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
@@ -134,11 +139,19 @@ hr {
     text-shadow: none;
     box-shadow: 2px 2px 0 #ff0000;
 }
+@media (max-width: 800px) {
+    #hero {
+        padding: 4rem 1rem;
+    }
+    #hero p {
+        font-size: 1.6rem;
+    }
+}
 
 /* project */
 #project {
     text-align: center;
-    padding: 10px 100px 60px;
+    padding: 1rem 8rem 6rem;
 }
 #projectlist {
     display: flex;
@@ -169,12 +182,21 @@ hr {
 .project a:hover {
     text-decoration: none;
 }
+@media (max-width: 800px) {
+    #project {
+        padding: 1rem 1rem 6rem;
+        text-align: left;
+    }
+    #project h2 {
+        text-align: center;
+    }
+}
 
 /* about */
 #about {
     text-align: center;
     margin: 0 auto;
-    padding: 10px auto 100px;
+    padding: 1rem 8rem 6rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -197,7 +219,6 @@ hr {
     font-size: 1.3rem;
 }
 #about .resume {
-    margin: 1rem auto 3rem;
     padding: 0.4rem 1.4rem 0.6rem;
     border: 3px solid #ffffff;
     border-radius: 1.8rem;
@@ -213,12 +234,21 @@ hr {
     color: #ffffff;
     text-decoration: none;
 }
+@media (max-width: 800px) {
+    #about {
+        padding: 1rem 1rem 6rem;
+        text-align: left;
+    }
+    #about h2 {
+        text-align: center;
+    }
+}
 
 /* contact */
 #contact {
     text-align: center;
     margin: 0;
-    padding: 10px 100px 60px;
+    padding: 1rem 8rem 6rem;
 }
 #contactinfo ul {
     list-style: none;
@@ -229,12 +259,20 @@ hr {
     font-size: x-large;
     line-height: 3rem;
 }
+@media (max-width: 800px) {
+    #contact {
+        padding: 1rem 1rem 6rem;
+    }
+    #contact h2 {
+        text-align: center;
+    }
+}
 
 /* blog */
 #blog {
     text-align: center;
     margin: 0;
-    padding: 10px 100px 60px;
+    padding: 1rem 8rem 6rem;
     background-color: #ffcaca;
 }
 #blog hr {
@@ -243,7 +281,6 @@ hr {
 #bloglist {
     margin: 0 auto;
     max-width: 500px;
-    min-width: 340px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,10 +312,18 @@ hr {
 .blogpost a:hover {
     text-decoration: none;
 }
+@media (max-width: 800px) {
+    #blog {
+        padding: 1rem 1rem 6rem;
+    }
+    #blog h2 {
+        text-align: center;
+    }
+}
 
 /* footer */
 #footer {
-    padding: 40px 100px 40px;
+    padding: 2rem 8rem 2rem;
     background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
@@ -301,4 +346,50 @@ hr {
 }
 #footer i:hover {
     color: #ff7575;
+}
+
+/* hamburger menu */
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #505050;
+}
+@media (max-width: 800px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 3.7rem;
+        flex-direction: column;
+        background-color: #ffffffef;
+        width: 100%;
+        border-radius: 0 0 1rem 1rem;
+        text-align: center;
+        box-shadow: 0 0 6px #ffcaca;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .navilink {
+        margin: 0.3rem;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
