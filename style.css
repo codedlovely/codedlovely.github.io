@@ -153,6 +153,45 @@ hr {
     text-align: center;
     padding: 1rem 8rem 6rem;
 }
+#mainprojectlist {
+    margin: 2rem auto 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.mainproject {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+    max-width: 800px;
+}
+.mainproject h4 {
+    text-align: left;
+    padding-left: 1rem;
+    color: #505050;
+}
+.mainproject img {
+    margin: 0;
+    padding: 0;
+    max-width: calc(800px / 2 - 1rem);
+}
+.mainproject p {
+    padding: 0 0 0 1rem;
+    text-align: left;
+    max-width: 400px;
+}
+.mainproject a {
+    display: block;
+    margin: 0.3rem 0;
+}
 #projectlist {
     display: flex;
     justify-content: center;
@@ -178,6 +217,9 @@ hr {
 }
 .project p {
     margin: 0.3rem auto 0.6rem;
+}
+.project a {
+    display: block;
 }
 .project a:hover {
     text-decoration: none;
@@ -220,6 +262,9 @@ hr {
 #about p {
     text-align: left;
     font-size: 1.3rem;
+}
+#about i {
+    margin: 0 0.2rem;
 }
 #about .resume {
     padding: 0.4rem 1.4rem 0.6rem;
@@ -271,64 +316,10 @@ hr {
     }
 }
 
-/* blog */
-#blog {
-    text-align: center;
-    margin: 0;
-    padding: 1rem 8rem 6rem;
-    background-color: #ffcaca;
-}
-#blog hr {
-    background: linear-gradient(0.25turn, #ff7575, #ffcaca, #ff7575);
-}
-#bloglist {
-    margin: 0 auto;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
-    flex-wrap: nowrap;
-}
-.blogpost {
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    gap: 10px;
-    background-color: #ffffff;
-    border-radius: 1rem;
-    text-align: left;
-}
-.blogpost:hover {
-    box-shadow: 1px 1px 4px #ff7575;
-}
-.blogpost h4 {
-    text-align: left;
-    margin: 0.8rem;
-}
-.blogpost p {
-    margin: 0.5rem;
-    padding-bottom: 0.8rem;
-}
-.blogpost a:hover {
-    text-decoration: none;
-}
-@media (max-width: 800px) {
-    #blog {
-        padding: 1rem 1rem 6rem;
-    }
-    #blog h2 {
-        text-align: center;
-    }
-}
-
 /* footer */
 #footer {
     padding: 2rem 8rem 2rem;
-    background-color: #ffffff;
+    background-color: #ffcaca;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
