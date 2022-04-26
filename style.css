@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Spectral:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 
 html {
-    scroll-padding-top: 70px;
+    scroll-padding-top: 3.7rem;
     scroll-behavior: smooth;
 }
 body {
@@ -153,6 +153,45 @@ hr {
     text-align: center;
     padding: 1rem 8rem 6rem;
 }
+#mainprojectlist {
+    margin: 2rem auto 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.mainproject {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+    max-width: 800px;
+}
+.mainproject h4 {
+    text-align: left;
+    padding-left: 1rem;
+    color: #505050;
+}
+.mainproject img {
+    margin: 0;
+    padding: 0;
+    max-width: calc(800px / 2 - 1rem);
+}
+.mainproject p {
+    padding: 0 0 0 1rem;
+    text-align: left;
+    max-width: 400px;
+}
+.mainproject a {
+    display: block;
+    margin: 0.3rem 0;
+}
 #projectlist {
     display: flex;
     justify-content: center;
@@ -179,6 +218,9 @@ hr {
 .project p {
     margin: 0.3rem auto 0.6rem;
 }
+.project a {
+    display: block;
+}
 .project a:hover {
     text-decoration: none;
 }
@@ -188,6 +230,9 @@ hr {
         text-align: left;
     }
     #project h2 {
+        text-align: center;
+    }
+    .project p {
         text-align: center;
     }
 }
@@ -217,6 +262,9 @@ hr {
 #about p {
     text-align: left;
     font-size: 1.3rem;
+}
+#about i {
+    margin: 0 0.2rem;
 }
 #about .resume {
     padding: 0.4rem 1.4rem 0.6rem;
@@ -271,7 +319,7 @@ hr {
 /* footer */
 #footer {
     padding: 2rem 8rem 2rem;
-    background-color: #ffffff;
+    background-color: #ffcaca;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

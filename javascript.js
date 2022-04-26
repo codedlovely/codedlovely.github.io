@@ -1,8 +1,12 @@
 
 // output footer copyright
+let copyrightYear = 2022;
 let currentYear = new Date().getFullYear();
+if (currentYear > copyrightYear) {
+    copyrightYear += `-${currentYear}`;
+}
 const divCopyright = document.querySelector('.copyright');
-divCopyright.textContent = '\u{0000A9} ' + currentYear + ' CodedLovely';
+divCopyright.textContent = '\u{0000A9} ' + copyrightYear + ' CodedLovely';
 
 // display hamburger menu
 const hamburger = document.querySelector(".hamburger");
