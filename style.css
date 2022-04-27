@@ -175,6 +175,7 @@ hr {
 }
 .mainproject h4 {
     text-align: left;
+    margin: 0.2rem auto;
     padding-left: 1rem;
     color: #505050;
 }
@@ -191,6 +192,18 @@ hr {
 .mainproject a {
     display: block;
     margin: 0.3rem 0;
+}
+.projectdesc span {
+    font-family: sans-serif;
+    font-size: x-small;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    border: 1px solid #505050;
+    border-radius: 1rem;
+}
+.projectdesc span::before,
+.projectdesc span::after {
+    content: ' ';
 }
 #projectlist {
     display: flex;
@@ -266,7 +279,20 @@ hr {
 #about i {
     margin: 0 0.2rem;
 }
+#about span {
+    font-family: sans-serif;
+    font-size: small;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+}
+#about span::before,
+#about span::after {
+    content: ' ';
+}
 #about .resume {
+    margin-top: 1.2rem;
     padding: 0.4rem 1.4rem 0.6rem;
     border: 3px solid #ffffff;
     border-radius: 1.8rem;
@@ -305,7 +331,7 @@ hr {
 }
 #contactinfo ul li {
     font-size: x-large;
-    line-height: 3rem;
+    line-height: 3.6rem;
 }
 @media (max-width: 800px) {
     #contact {
