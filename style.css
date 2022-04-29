@@ -442,3 +442,23 @@ hr {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+/* back to top button */
+#scrollBack {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #bbbbbb;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 1rem 1.2rem;
+    border-radius: 2rem;
+}  
+#scrollBack:hover {
+    background-color: #ff7575;
+    color: #ffffff;
+}
