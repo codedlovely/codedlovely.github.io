@@ -397,6 +397,11 @@ hr {
 #footer i:hover {
     color: #ff7575;
 }
+@media (max-width: 800px) {
+    #footer {
+        padding: 2rem 1rem;
+    }
+}
 
 /* hamburger menu */
 .hamburger {
