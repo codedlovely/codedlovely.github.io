@@ -11,9 +11,6 @@ body {
     font-family: 'Spectral', serif;
     font-size: 18px;
 }
-* {
-    border: 1px solid red;
-}
 h1, h2, h3, h4, h5, h6 {
     color: #ff7575;
     font-family: 'Corben', sans-serif;
@@ -54,6 +51,7 @@ hr {
 }
 #header h1 {
     font-size: larger;
+    text-transform: none;
 }
 #header h1 span {
     color: #ff0000;
@@ -87,7 +85,7 @@ hr {
 }
 @media (max-width: 400px) {
     #header {
-        padding: 0.4rem;
+        padding: 0.4rem 0.8rem;
     }
     #navimenu {
         position: fixed;
@@ -113,10 +111,10 @@ hr {
         opacity: 0;
     }
     .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
     }
     .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-6px) rotate(-45deg);
     }
 }
 
@@ -169,20 +167,6 @@ hr {
     border-radius: 2rem;
     box-shadow: 2px 2px #ff0000;
 }
-#hero i span {
-    visibility: hidden;
-    margin: -1rem auto auto -1.8rem;
-    color: #505050;
-    border: 1px solid #505050;
-    font-family: sans-serif;
-    font-size: 0.9rem;
-    box-shadow: none;
-    position: absolute;
-    z-index: 77;
-}
-#hero i:hover span {
-    visibility: visible;
-}
 @media (max-width: 400px) {
     #hero {
         display: block;
@@ -202,9 +186,14 @@ hr {
     justify-content: left;
     align-items: flex-start;
     gap: 1rem;
+    border: 1px solid #ffcaca;
+}
+.mainproject h4 {
+    text-align: left;
 }
 .mainproject img {
     max-width: 380px;
+    border-right: 1px dotted #ffcaca;
 }
 .mainproject p {
     text-align: left;
@@ -212,13 +201,13 @@ hr {
 .mainproject p span {
     font-family: sans-serif;
     font-size: small;
-    margin: auto 0.4rem;
+    margin: auto 0.2rem;
     border: 1px solid #505050;
     border-radius: 2rem;
 }
 .mainproject p span::before,
 .mainproject p span::after {
-    content: ' ';
+    content: '\00a0';
 }
 .mainproject p a {
     display: block;
@@ -235,6 +224,10 @@ hr {
 .project {
     margin: 0 auto;
     max-width: 280px;
+    border: 1px solid #ffcaca;
+}
+.project:hover {
+    box-shadow: 1px 1px 4px #ff7575;
 }
 .project img {
     max-width: 100%;
@@ -242,13 +235,91 @@ hr {
 .project a {
     display: block;
 }
+.project p span {
+    font-family: sans-serif;
+    font-size: small;
+    margin: auto 0.2rem;
+    border: 1px solid #505050;
+    border-radius: 2rem;
+}
+.project p span::before,
+.project p span::after {
+    content: '\00a0';
+}
 @media (max-width: 400px) {
     .mainproject {
         display: block;
     }
+    .mainproject h4 {
+        text-align: center;
+    }
     .mainproject img {
         max-width: 100%;
+        border-bottom: 1px dotted #ffcaca;
     }
+    #projectlist {
+        gap: 1rem;
+    }
+}
+
+/* about */
+#about {
+    background-color: #ff7575;
+    color: #ffffff;
+}
+#about h2 {
+    color: #ffffff;
+}
+#about hr {
+    background: linear-gradient(0.25turn, #ffffff, #ff7575, #ffffff);
+}
+#aboutcontainer {
+    margin: auto;
+    max-width: 500px
+}
+#aboutcontainer p {
+    text-align: left;
+}
+#aboutcontainer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+#aboutcontainer ul li {
+    margin: 0;
+    padding: 0 1rem;
+    display: inline-block;
+}
+#about .resume {
+    display: block;
+    margin: 1.2rem auto;
+    padding: 0.4rem 1.4rem;
+    border: 3px solid #ffffff;
+    border-radius: 1.8rem;
+    background-color: #ffffff;
+    color: #ff7575;
+    font-family: 'Corben', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    max-width: 300px;
+}
+#about .resume:hover {
+    border: 3px solid #ffffff;
+    background-color: #ff7575;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* contact */
+#contactinfo ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#contactinfo ul li {
+    font-size: larger;
+    line-height: 3rem;
 }
 
 /* footer */
@@ -287,5 +358,31 @@ hr {
     #footer ul li a {
         font-size: 2rem;
         color: #ff7575;
+    }
+}
+
+/* back to top button */
+#scrollBack {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 98;
+    border: none;
+    outline: none;
+    background-color: #bbbbbb;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 1rem 1.2rem;
+    border-radius: 2rem;
+}  
+#scrollBack:hover {
+    background-color: #ff7575;
+    color: #ffffff;
+}
+@media (max-width: 400px) {
+    #scrollBack {
+        bottom: 1.3rem;
+        right: 1.3rem;
     }
 }
