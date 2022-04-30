@@ -52,6 +52,7 @@ hr {
     top: 0;
     background-color: #ffffffe0;
     box-shadow: 0 0 6px #ffcaca;
+    z-index: 99;
 }
 #sitelogo {
     font-family: 'Corben', sans-serif;
@@ -110,7 +111,6 @@ hr {
     background-color: #ff7575;
     color: #ffffff;
     display: flex;
-/*    flex: 1 1 auto;*/
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
@@ -150,7 +150,7 @@ hr {
     margin: -1.8rem auto auto -1.8rem;
     padding: 0.5rem;
     position: absolute;
-    z-index: 99;
+    z-index: 97;
     box-shadow: none;
 }
 #hero i:hover .fa-text {
@@ -297,26 +297,27 @@ hr {
 #about i {
     margin: 0 0.2rem;
 }
-#about i span.fa-text {
+#about p i span.fa-text {
     visibility: hidden;
     background-color: #ffffff;
     color: #505050;
-    font-size: 0.8rem;
+    font-family: 'Spectral', serif;
+    font-size: 1.1rem;
+    font-weight: normal;
     text-align: center;
     border: 1px solid #505050;
     border-radius: 1.8rem;
-    margin: -1.8rem auto auto -1.8rem;
+    margin: -2.4rem auto auto -1.8rem;
     padding: 0.5rem;
     position: absolute;
-    z-index: 98;
+    z-index: 97;
     box-shadow: none;
 }
-#about i:hover span.fa-text {
+#about p i:hover span.fa-text {
     visibility: visible;
 }
-
-#about span::before,
-#about span::after {
+#about p i span::before,
+#about p i span::after {
     content: ' ';
 }
 #about .resume {
@@ -449,7 +450,7 @@ hr {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    z-index: 99;
+    z-index: 98;
     border: none;
     outline: none;
     background-color: #bbbbbb;
