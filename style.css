@@ -48,10 +48,12 @@ hr {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    background-color: #ffcaca;
 }
 #header h1 {
     font-size: larger;
     text-transform: none;
+    text-shadow: 1px 1px #ffffff;
 }
 #header h1 span {
     color: #ff0000;
@@ -331,6 +333,7 @@ hr {
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
+    font-family: 'Corben', sans-serif;
     background-color: #ffcaca;
 }
 #footer ul {
