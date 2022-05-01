@@ -53,7 +53,7 @@ hr {
 #header h1 {
     font-size: larger;
     text-transform: none;
-    text-shadow: 1px 1px #ffffff;
+    text-shadow: 0 0 8px #ffffff;
 }
 #header h1 span {
     color: #ff0000;
@@ -72,6 +72,7 @@ hr {
 .navilink a {
     color: #505050;
     font-family: 'Corben', sans-serif;
+    text-shadow: 0 0 8px #ffffff;
 }
 .hamburger {
     display: none;
