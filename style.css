@@ -59,6 +59,9 @@ hr {
     color: #ff0000;
     font-size: small;
 }
+#header a:hover {
+    text-decoration: none;
+}
 #navimenu {
     margin: 0;
     padding: 0;
@@ -98,7 +101,6 @@ hr {
         background-color: #ffffffef;
         width: 100%;
         text-align: center;
-        box-shadow: 0 0 6px #ffcaca;
     }
     #navimenu.active {
         left: 0;
