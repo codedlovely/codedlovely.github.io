@@ -144,6 +144,7 @@ hr {
 
 /* project */
 .mainprojectlist {
+    margin-top: 0;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
@@ -151,20 +152,26 @@ hr {
     align-items: center;
     flex-wrap: nowrap;
     gap: 1rem;
-    border: 1px solid #ffcaca;
 }
 @media (max-width: 420px) {
     .mainprojectlist {
         flex-wrap: wrap;
+    }
+    .mainprojectlist h3 {
+        text-align: center;
     }
 }
 @media (min-width:421px) and ( max-width:900px) {
     .mainprojectlist {
         flex-wrap: wrap;
     }
+    .mainprojectlist h3 {
+        text-align: center;
+    }
 }
 .mainprojectlist img {
     max-width: 390px;
+    border: 1px solid #ffcaca;
 }
 .mainprojectlist p span {
     padding: 0 0.4rem;
@@ -188,11 +195,14 @@ hr {
 }
 .exercise {
     max-width: 30%;
-    border: 1px solid #ffcaca;
     padding-bottom: 1rem;
+}
+.exercise h3 {
+    text-align: center;
 }
 .exercise img {
     max-width: 100%;
+    border: 1px solid #ffcaca;
 }
 .exercise p span {
     padding: 0 0.4rem;
