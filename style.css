@@ -29,7 +29,7 @@ img {
 hr {
     height: 0.2rem;
     max-width: 300px;
-    margin: 0 auto 3rem;
+    margin: 4rem auto;
     padding: 0;
     border: none;
     background: linear-gradient(0.25turn, #ff7575, #ffffff, #ff7575);
@@ -236,9 +236,6 @@ hr {
 #about h2 {
     color: #ffffff;
 }
-#about hr {
-    background: linear-gradient(0.25turn, #ffffff, #ff7575, #ffffff);
-}
 #about a {
     color: #ffffff;
 }
@@ -251,7 +248,7 @@ hr {
 }
 #about .resume {
     display: block;
-    margin: 0.8rem auto;
+    margin: 2.4rem auto;
     padding: 0.4rem 0.8rem;
     width: 300px;
     text-align: center;
