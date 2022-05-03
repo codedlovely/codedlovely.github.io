@@ -14,228 +14,209 @@
     <script src="javascript.js" defer></script>
     <script src="https://kit.fontawesome.com/25514ad6fc.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
+
     <div id="header">
-        <h1>
-            <a href="./index.html">
-                Coded<span>&hearts;</span>Lovely
-            </a>
-        </h1>
-        <ul id="navimenu" class="nav-menu">
-            <li class="navilink"><a href="#project">Project</a></li>
-            <li class="navilink"><a href="#about">About</a></li>
-            <li class="navilink"><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div id="logo">
+            <h1><a href="">CodedLovely</a><span>&hearts;</span></h1>
         </div>
+        <ul id="navimenu">
+            <li class="navilink"><a href="#project">project</a></li>
+            <li class="navilink"><a href="#about">about</a></li>
+            <li class="navilink"><a href="#contact">contact</a></li>
+        </ul>
     </div>
-    
+
     <div id="hero">
-        <img src="./assets/images/placeholder.png" alt="picture of me">
-        <p>Hi, I'm <span>Ai Kawasaki</span>,<br>a <span>front-end developer</span>
-            <br>powered by <span>
-            <i class="fa-brands fa-html5 tooltip" title="HTML5"></i>
-            <i class="fa-brands fa-css3-alt" title="CSS3"></i>
-            <i class="fa-brands fa-js-square" title="JavaScript"></i>
-            <i class="fa-brands fa-git-alt" title="Git"></i>
-            </span>.
-        </p>
+        <img src="./assets/images/placeholder.png" alt="profile image">
+        <div id="herotext">
+            <p>
+                Hi, I'm <span>Ai Kawasaki</span>,<br>
+                a <span>front-end developer</span><br>
+                powered by <span>
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                    <i class="fa-brands fa-js-square" title="JavaScript"></i>
+                    <i class="fa-brands fa-git-alt" title="Git"></i>
+                </span>.
+            </p>
+        </div>
     </div>
 
     <div id="project">
-        <h2>Project</h2><hr>
-        <div id="mainprojectlist">
-            <div class="mainproject">
-                <img src="./assets/images/hamakaze-bakery.png" alt="Hamakaze Bakery landing page screenshot">
-                <div class="projectdesc">
-                    <h4>Hamakaze Bakery</h4>
-                    <p>
-                        A landing page for a fictional local bakery.
-                        Aimed to build a clean and simple website.
-                        Hero image is key to show the atmosphere this bakery has.
-                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                        <a href="https://codedlovely.github.io/hamakaze-bakery/" target="_blank">
-                            Live demo
-                        </a>
-                        <a href="https://github.com/codedlovely/hamakaze-bakery" target="_blank">
-                            View <i class="fa-brands fa-github"></i> repo
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="mainproject">
-                <img src="./assets/images/codedlovely.png" alt="CodedLovely screenshot">
-                <div class="projectdesc">
-                    <h4>CodedLovely</h4>
-                    <p>
-                        It's my online portfolio you're looking at right now!
-                        I built this website from scratch and tried to reflect my personality.
-                        Will be updated regularly, so stay tuned.
-                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                        <a href="https://github.com/codedlovely/codedlovely.github.io" target="_blank">
-                            View <i class="fa-brands fa-github"></i> repo
-                        </a>
-                    </p>
-                </div>
+        <h2>project</h2>
+        <hr>
+        <div class="mainprojectlist">
+            <img src="./assets/images/hamakaze-bakery.png" alt="Hamakaze Bakery landing page screenshot">
+            <div>
+                <h3>Hamakaze Bakery</h3>
+                <p>
+                    A landing page for a fictional local bakery.
+                    Aimed to build a clean and simple website.
+                    Hero image is key to show the atmosphere this bakery has.
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <a href="https://codedlovely.github.io/hamakaze-bakery/" target="_blank">Live demo</a>
+                    <a href="https://github.com/codedlovely/hamakaze-bakery" target="_blank">
+                        Visit <i class="fa-brands fa-github"></i> repo
+                    </a>
+                </p>
             </div>
         </div>
-        <p>Here are some HTML, CSS and JavaScript exercises work on desktop and wide displays.<br>
-            These are assignments from 
-            <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>,
-            free online course for HTML/CSS and JavaScript basics.
-        </p>
-        <div id="projectlist">
-            <div class="project">
-                <a href="https://codedlovely.github.io/etch-a-sketch/" target="_blank">
+        <div class="mainprojectlist">
+            <img src="./assets/images/codedlovely.png" alt="CodedLovely screenshot">
+            <div>
+                <h3>CodedLovely</h3>
+                <p>
+                    It's my online portfolio you're looking at right now!
+                    I built this website from scratch and tried to reflect my personality.
+                    Will be updated regularly, so stay tuned.
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <a href="https://github.com/codedlovely/codedlovely.github.io" target="_blank">
+                        Visit <i class="fa-brands fa-github"></i> repo
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div id="exercisecontainer">
+            <p>
+                Here are some HTML, CSS and JavaScript exercises work on desktop and wide displays.
+                These are assignments from
+                <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>,
+                free online course for HTML/CSS and JavaScript basics.
+            </p>
+            <div id="exerciselist">
+                <div class="exercise">
+                    <h3>ETCH-A-SKETCH</h3>
                     <img src="./assets/images/etch-a-sketch.png" alt="ETCH-A-SKETCH screenshot">
-                </a>
-                <p>
-                    <a href="https://codedlovely.github.io/etch-a-sketch/" target="_blank">ETCH-A-SKETCH</a>
-                    <p>A simple coloring game with color picker and grid size selecter.
-                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                        <a href="https://github.com/codedlovely/etch-a-sketch" target="_blank">
-                            View <i class="fa-brands fa-github"></i> repo
-                        </a>
+                    <p>
+                        A simple coloring game with color picker and grid size selecter.
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
                     </p>
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://codedlovely.github.io/rock-paper-scissors/" target="_blank">
+                    <a href="https://codedlovely.github.io/etch-a-sketch/" target="_blank">
+                        Live demo
+                    </a>
+                    <a href="https://github.com/codedlovely/etch-a-sketch" target="_blank">
+                        Visit <i class="fa-brands fa-github"></i> repo
+                    </a>
+                </div>
+                <div class="exercise">
+                    <h3>Rock Paper Scissors</h3>
                     <img src="./assets/images/rock-paper-scissors.png" alt="Rock Paper Scissors screenshot">
-                </a>
-                <p>
-                    <a href="https://codedlovely.github.io/rock-paper-scissors/" target="_blank">Rock Paper Scissors</a>
-                    <p>Rock, Paper, Scissors game. You vs. computer.
-                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                        <a href="https://github.com/codedlovely/rock-paper-scissors" target="_blank">
-                            View <i class="fa-brands fa-github"></i> repo
-                        </a>
+                    <p>
+                        Rock, Paper, Scissors game. You vs. computer.
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
                     </p>
-                </p>
-            </div>
-            <div class="project">
-                <a href="https://codedlovely.github.io/landingpage-project/" target="_blank">
-                    <img src="./assets/images/landingpage.png" alt="Landing Page screenshot">
-                </a>
-                <p>
-                    <a href="https://codedlovely.github.io/landingpage-project/" target="_blank">Landing Page</a>
-                    <p>My very first exercise. A web page using basic HTML and CSS.
-                        <span>HTML</span><span>CSS</span>
-                        <a href="https://github.com/codedlovely/landingpage-project" target="_blank">
-                            View <i class="fa-brands fa-github"></i> repo
-                        </a>
+                    <a href="https://codedlovely.github.io/rock-paper-scissors/" target="_blank">
+                        Live demo
+                    </a>
+                    <a href="https://github.com/codedlovely/rock-paper-scissors" target="_blank">
+                        Visit <i class="fa-brands fa-github"></i> repo
+                    </a>
+                </div>
+                <div class="exercise">
+                    <h3>Landing Page</h3>
+                    <img src="./assets/images/landingpage.png" alt="Landing page screenshot">
+                    <p>
+                        My very first exercise. A web page using basic HTML and CSS.
+                        <span>HTML</span>
+                        <span>CSS</span>
                     </p>
-                </p>
+                    <a href="https://codedlovely.github.io/landingpage-project/" target="_blank">
+                        Live demo
+                    </a>
+                    <a href="https://github.com/codedlovely/landingpage-project" target="_blank">
+                        Visit <i class="fa-brands fa-github"></i> repo
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
     <div id="about">
-        <h2>About</h2><hr>
-        <div id="aboutcontainer">
-            <p>Hi there<i class="fa-solid fa-hand-spock"></i>
-            </p>
-            <p>My name is Ai Kawasaki. I'm an aspiring front-end developer based in Japan,
-                currently seeking opportunities to turn my enthusiasm for coding
-                into websites that help people's everyday life.
-            </p>
-            <p>I found my passion for web development, specifically for HTML/CSS coding,
-                when I started creating my personal website more than 20 years ago.
-                Since then, I've learned HTML/CSS and JavaScript
-                (occasionally PHP and other server side script) on my own,
-                and I'm still enthusiastically absorbing new technical information
-                to expand my skill set.
-            </p>
-            <p>
-                I also have experience with...
-                <ul>
-                    <li><i class="fa-solid fa-laptop-code"></i>
-                        VS Code
-                    </li>
-                    <li><i class="fa-brands fa-wordpress-simple"></i>
-                        WordPress
-                    </li>
-                    <li><i class="fa-solid fa-chart-line"></i>
-                        Tableau
-                    </li>
-                    <li><i class="fa-solid fa-person-chalkboard"></i>
-                        Presentation prep
-                    </li>
-                </ul>
-            </p>
-            <p>
-                When I'm not coding, I'm...
-                <ul>
-                    <li><i class="fa-solid fa-person-running"></i>
-                        Running
-                    </li>
-                    <li><i class="fa-solid fa-fish"></i>
-                        Scuba diving
-                    </li>
-                    <li><i class="fa-solid fa-cake-candles"></i>
-                        Baking
-                    </li>
-                    <li><i class="fa-solid fa-book-open-reader"></i>
-                        Reading
-                    </li>
-                    <li><i class="fa-solid fa-guitar"></i>
-                        Playing ukulele
-                    </li>
-                    <li><i class="fa-solid fa-music"></i>
-                        Singing
-                    </li>
-                </ul>
-            </p>
-        </div>
-        <a class="resume" href="./assets/files/Resume AiKawasaki online.pdf" target="_blank">Download Resume</a>
+        <h2>about</h2>
+        <hr>
+        <p>
+            Hi there <i class="fa-solid fa-hand-spock"></i>
+        </p>
+        <p>
+            My name is Ai Kawasaki. I'm an aspiring front-end developer based in Japan,
+            currently seeking opportunities to turn my enthusiasm for coding into websites
+            that help people's everyday life.
+        </p>
+        <p>
+            I found my passion for web development, specifically for HTML/CSS coding,
+            when I started creating my personal website more than 20 years ago.
+            Since then, I've learned HTML/CSS and JavaScript
+            (occasionally PHP and other server side script) on my own,
+            and I'm still enthusiastically absorbing new technical information to expand my skill set.
+        </p>
+        <p>
+            I also have experience with
+            <span><i class="fa-solid fa-laptop-code"></i> VS Code</span>,
+            <span><i class="fa-brands fa-wordpress-simple"></i> WordPress</span>,
+            <span><i class="fa-solid fa-chart-line"></i> Tableau</span>,
+            <span><i class="fa-solid fa-person-chalkboard"></i> Presentation prep</span>.
+        </p>
+        <p>
+            When I'm not coding, I'm
+            <span><i class="fa-solid fa-person-running"></i> running</span>,
+            <span><i class="fa-solid fa-fish"></i> scuba diving</span>,
+            <span><i class="fa-solid fa-cake-candles"></i> baking</span>,
+            <span><i class="fa-solid fa-book-open-reader"></i> reading</span>,
+            <span><i class="fa-solid fa-guitar"></i> playing ukulele</span>,
+            <span><i class="fa-solid fa-music"></i> singing</span>.
+        </p>
+        <a class="resume" href="./assets/files/Resume AiKawasaki online.pdf" title="resume download" target="_blank">
+            download resume
+        </a>
     </div>
 
     <div id="contact">
-        <h2>Contact</h2><hr>
+        <h2>contact</h2>
+        <hr>
         <p>Let's get in touch.</p>
-        <div id="contactinfo">
-            <ul>
-                <li>
-                    <a href="mailto:hello@codedlovely.net">
-                        Send an email 
-                        <i class="fa-regular fa-envelope"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/codedlovely" target="_blank">
-                        Collaborate on GitHub 
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/aikawasaki/" target="_blank">
-                        Visit LinkedIn profile
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <a href="mailto:hello@codedlovely.net">
+            Send an email <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="https://github.com/codedlovely" target="_blank">
+            Collaborate on GitHub <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/aikawasaki/" target="_blank">
+            Visit LinkedIn profile <i class="fa-brands fa-linkedin"></i>
+        </a>
     </div>
 
     <div id="footer">
-        <div class="copyright"><!--copyright--></div>
-        <ul>
-            <li class="sociallink">
-                <a href="https://github.com/codedlovely" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <div id="copyright">
+            <!---->
+        </div>
+        <ul id="footerlinks">
+            <li class="footerlink">
+                <a href="https://github.com/codedlovely" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </li>
-            <li class="sociallink">
-                <a href="https://medium.com/@codedlovely" target="_blank"><i class="fa-brands fa-medium"></i></a>
+            <li class="footerlink">
+                <a href="https://medium.com/@codedlovely" target="_blank">
+                    <i class="fa-brands fa-medium"></i>
+                </a>
             </li>
-            <li class="sociallink">
-                <a href="https://www.linkedin.com/in/aikawasaki/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <li class="footerlink">
+                <a href="https://www.linkedin.com/in/aikawasaki/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </li>
         </ul>
     </div>
-
+    
     <button onclick="topFunction()" id="scrollBack" title="Scroll back to top">
         <i class="fa-solid fa-angles-up"></i>
     </button>
