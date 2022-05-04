@@ -1,1 +1,1 @@
-Sitemap: https://www.codedlovely.net/blog/sitemap.xml
+Sitemap: https://www.codedlovely.net/blog/blog/sitemap.xml
