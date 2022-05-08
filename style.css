@@ -292,6 +292,10 @@ hr {
     margin: 0.8rem auto;
     font-size: 1.8rem;
 }
+#copyright {
+    font-family: 'Corben', sans-serif;
+    font-weight: 300;
+}
 
 
 /* back to top button */
