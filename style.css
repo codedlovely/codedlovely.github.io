@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Spectral:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 
+/* custom properties */
+:root {
+    --main-color: #505050;
+    --main-background-color: #ffffff;
+    --acc-color-dark: #ff7575;
+    --acc-color-light: #ffcaca;
+    --acc-color-shadow: #ff0000;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -8,17 +17,17 @@ body {
     padding: 0;
     font-size: 20px;
     background-color: #ffffff;
-    color: #505050;
+    color: var(--main-color);
     font-family: 'Spectral', serif;
 }
 h2, h3, h4, h5, h6 {
     text-transform: uppercase;
-    color: #ff7575;
+    color: var(--acc-color-dark);
     font-family: 'Corben', sans-serif;
 }
 a {
     text-decoration: none;
-    color: #ff7575;
+    color: var(--acc-color-dark);
 }
 a:hover {
     text-decoration: underline;
@@ -57,7 +66,7 @@ hr {
 #contact h2,
 #blog h2 {
     text-align: center;
-    color: #ff7575;
+    color: var(--acc-color-dark);
 }
 
 #header ul,
@@ -74,8 +83,8 @@ hr {
 
 /* header */
 #header {
-    background-color: #ffcaca;
-    color: #ffffff;
+    background-color: var(--acc-color-light);
+    color: var(--main-background-color);
     display: flex;
     justify-content: space-around;
     align-items: baseline;
@@ -84,13 +93,13 @@ hr {
 }
 #header h1 span {
     font-size: 1rem;
-    color: #ff0000;
+    color: var(--acc-color-shadow);
 }
 #header h1 a:hover {
     text-decoration: none;
 }
 #header ul li a {
-    color: #505050;
+    color: var(--main-color);
     text-transform: uppercase;
 }
 @media (max-width:560px) {
@@ -100,8 +109,8 @@ hr {
 }
 /* hero */
 #hero {
-    background-color: #ff7575;
-    color: #ffffff;
+    background-color: var(--acc-color-dark);
+    color: var(--main-background-color);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -112,14 +121,14 @@ hr {
 }
 #hero img {
     max-width: 260px;
-    border: 1px solid #ff0000;
+    border: 1px solid var(--acc-color-shadow);
     border-radius: 50%;
 }
 #herotext p {
     margin: 0;
     font-size: 3rem;
     font-weight: bold;
-    text-shadow: 2px 2px #ff0000;
+    text-shadow: 2px 2px var(--acc-color-shadow);
     line-height: 200%;
 }
 @media (max-width: 420px) {
@@ -135,10 +144,10 @@ hr {
 #herotext p span {
     margin: 0;
     padding: 0 0.8rem;
-    background-color: #ffffff;
-    color: #ff7575;
+    background-color: var(--main-background-color);
+    color: var(--acc-color-dark);
     text-shadow: none;
-    box-shadow: 2px 2px #ff0000;
+    box-shadow: 2px 2px var(--acc-color-shadow);
     border-radius: 3rem;
 }
 
@@ -171,13 +180,13 @@ hr {
 }
 .mainprojectlist img {
     max-width: 390px;
-    border: 1px solid #ffcaca;
+    border: 1px solid var(--acc-color-light);
 }
 .mainprojectlist p span {
     padding: 0 0.4rem;
     font-family: sans-serif;
     font-size: 0.9rem;
-    border: 1px solid #505050;
+    border: 1px solid var(--main-color);
     border-radius: 2rem;
 }
 .mainprojectlist p a {
@@ -202,13 +211,13 @@ hr {
 }
 .exercise img {
     max-width: 100%;
-    border: 1px solid #ffcaca;
+    border: 1px solid var(--acc-color-light);
 }
 .exercise p span {
     padding: 0 0.4rem;
     font-family: sans-serif;
     font-size: 0.9rem;
-    border: 1px solid #505050;
+    border: 1px solid var(--main-color);
     border-radius: 2rem;
 }
 .exercise a {
@@ -229,15 +238,11 @@ hr {
 }
 
 /* about */
-#about {
-    background-color: #ff7575;
-    color: #ffffff;
-}
-#about h2 {
-    color: #ffffff;
-}
+#about,
+#about h2,
 #about a {
-    color: #ffffff;
+    background-color: var(--acc-color-dark);
+    color: var(--main-background-color);
 }
 #about p {
     max-width: 500px;
@@ -252,10 +257,10 @@ hr {
     padding: 0.4rem 0.8rem;
     width: 300px;
     text-align: center;
-    border: 3px solid #ffffff;
+    border: 3px solid var(--main-background-color);
     border-radius: 2.4rem;
-    background-color: #ffffff;
-    color: #ff7575;
+    background-color: var(--main-background-color);
+    color: var(--acc-color-dark);
     font-family: 'Corben', sans-serif;
     font-weight: bold;
     font-size: 1.4rem;
@@ -263,13 +268,13 @@ hr {
 }
 #about .resume:hover {
     text-decoration: none;
-    background-color: #ff7575;
-    color: #ffffff;
+    background-color: var(--acc-color-dark);
+    color: var(--main-background-color);
 }
 
 /* contact */
 #contact {
-    background-color: #ffffff;
+    background-color: var(--main-background-color);
     text-align: center;
 }
 #contact a {
@@ -281,8 +286,8 @@ hr {
 /* footer */
 #footer {
     padding: 2rem;
-    background-color: #ffcaca;
-    color: #505050;
+    background-color: var(--acc-color-light);
+    color: var(--main-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -307,15 +312,16 @@ hr {
     z-index: 98;
     border: none;
     outline: none;
-    background-color: #bbbbbb;
-    color: #ffffff;
+    background-color: var(--main-color);
+    opacity: 0.6;
+    color: var(--main-background-color);
     cursor: pointer;
     padding: 1rem 1.2rem;
     border-radius: 2rem;
 }  
 #scrollBack:hover {
-    background-color: #ff7575;
-    color: #ffffff;
+    background-color: var(--acc-color-dark);
+    color: var(--main-background-color);
 }
 @media (max-width: 420px) {
     #scrollBack {
