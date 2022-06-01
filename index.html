@@ -3,221 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Personal portfolio website">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Front-end developer">
-    <meta name="author" content="Ai Kawasaki">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodedLovely</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-ff.png">
-    <script src="javascript.js" defer></script>
     <script src="https://kit.fontawesome.com/25514ad6fc.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-ff.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="customstyle.css">
+    <script src="customscript.js" defer></script>
+
 </head>
 <body>
 
-    <div id="header">
-        <div id="logo">
-            <h1><a href="">CodedLovely</a><span>&hearts;</span></h1>
-        </div>
-        <ul id="navimenu">
-            <li class="navilink"><a href="#project">project</a></li>
-            <li class="navilink"><a href="#about">about</a></li>
-            <li class="navilink"><a href="#contact">contact</a></li>
-        </ul>
-    </div>
-
-    <div id="hero">
-        <img src="./assets/images/placeholder.png" alt="profile image">
-        <div id="herotext">
-            <p>
-                Hi, I'm <span>Ai Kawasaki</span>,<br>
-                a <span>front-end developer</span><br>
-                powered by <span>
-                    <i class="fa-brands fa-html5" title="HTML5"></i>
-                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
-                    <i class="fa-brands fa-js-square" title="JavaScript"></i>
-                    <i class="fa-brands fa-git-alt" title="Git"></i>
-                </span>.
-            </p>
+    <div class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <a href="" class="navbar-brand"><h1>CodedLovely</h1><span>&hearts;</span></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" id="navbarButton">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#project" class="nav-item nav-link text-uppercase mx-1">project</a>
+                    <a href="#about" class="nav-item nav-link text-uppercase mx-1">about</a>
+                    <a href="#contact" class="nav-item nav-link text-uppercase mx-1">contact</a>
+                </div>
+            </div>
         </div>
     </div>
+    
+    <div class="container-fluid py-5" id="hero">
+        <div class="row justify-content-end">
+            <div class="col-sm-12 col-md-10 col-lg-7">
+                <p>
+                    Hi, I'm <span class="rounded-pill px-4">Ai Kawasaki</span> ,<br>
+                    a <span class="rounded-pill px-4">front-end developer</span><br>
+                    powered by <span class="rounded-pill px-4">
+                    <i class="fa-brands fa-html5" data-bs-toggle="tooltip" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" data-bs-toggle="tooltip" title="CSS3"></i>
+                    <i class="fa-brands fa-bootstrap" data-bs-toggle="tooltip" title="Bootstrap"></i>
+                    <i class="fa-brands fa-js-square" data-bs-toggle="tooltip" title="JavaScript"></i>
+                    <i class="fa-brands fa-git-alt" data-bs-toggle="tooltip" title="Git"></i>
+                    <i class="fa-solid fa-mug-hot" data-bs-toggle="tooltip" title="Coffee"></i>
+                    </span> .
+                </p>
+            </div>
+        </div>
+    </div>
 
-    <div id="project">
+    <div class="container-md py-5" id="project">
         <h2>project</h2>
-        <div class="mainprojectlist">
-            <img src="./assets/images/hamakaze-bakery.png" alt="Hamakaze Bakery landing page screenshot">
-            <div>
-                <h3>Hamakaze Bakery</h3>
-                <p>
-                    A landing page for a fictional local bakery.<br>
-                    Aimed to build a clean and simple website.
-                    Hero image is key to show the atmosphere this bakery has.
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <a href="https://codedlovely.github.io/hamakaze-bakery/" target="_blank">Live demo</a>
-                    <a href="https://github.com/codedlovely/hamakaze-bakery" target="_blank">
-                        Visit <i class="fa-brands fa-github"></i> repo
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card my-2 pb-4 text-center border-0 shadow">
+                    <img src="./assets/images/codedlovely.png" class="rounded" alt="CodedLovely screenshot">
+                    <h5 class="card-title mt-3">CodedLovely<!--CodedLovely--></h5>
+                    <p class="card-text px-2 text-start">
+                        It's my online portfolio you're looking at right now!
+                        I built this website from scratch and tried to reflect my personality.
+                        Will be updated regularly, so stay tuned.
+                    </p>
+                    <p>
+                        <span class="border border-dark rounded-pill px-2 me-1">HTML</span>
+                        <span class="border border-dark rounded-pill px-2 me-1">CSS</span>
+                        <span class="border border-dark rounded-pill px-2 me-1">Bootstrap</span>
+                        <span class="border border-dark rounded-pill px-2 me-1">JavaScript</span>
+                    </p>
+                    <a href="" class="btn w-50 mx-auto my-1 disabled">view demo</a>
+                    <a href="https://github.com/codedlovely/codedlovely.github.io" class="btn w-50 mx-auto my-1 linkRepo">
+                        visit repo
                     </a>
-                </p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card my-2 pb-4 text-center border-0 shadow">
+                    <img src="./assets/images/hamakaze-bakery.png" class="rounded" alt="Hamakaze Bakery screenshot">
+                    <h5 class="card-title mt-3">Hamakaze Bakery<!--Hamakaze Bakery--></h5>
+                    <p class="card-text px-2 text-start">
+                        A landing page for a fictional local bakery.
+                        Aimed to build a clean and simple website.
+                        Hero image is key to show the atmosphere this bakery has.
+                    </p>
+                    <p>
+                        <span class="border border-dark rounded-pill px-2 me-1">HTML</span>
+                        <span class="border border-dark rounded-pill px-2 me-1">CSS</span>
+                        <span class="border border-dark rounded-pill px-2 me-1">Bootstrap</span>
+                        <span class="border border-dark rounded-pill px-2 me-1">JavaScript</span>
+                    </p>
+                    <a href="https://codedlovely.github.io/hamakaze-bakery/" class="btn w-50 mx-auto my-1">
+                        view demo
+                    </a>
+                    <a href="https://github.com/codedlovely/hamakaze-bakery" class="btn w-50 mx-auto my-1 linkRepo">
+                        visit repo
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="mainprojectlist">
-            <img src="./assets/images/codedlovely.png" alt="CodedLovely screenshot">
-            <div>
-                <h3>CodedLovely</h3>
-                <p>
-                    It's my online portfolio you're looking at right now!<br>
-                    I built this website from scratch and tried to reflect my personality.
-                    Will be updated regularly, so stay tuned.
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <a href="https://github.com/codedlovely/codedlovely.github.io" target="_blank">
-                        Visit <i class="fa-brands fa-github"></i> repo
-                    </a>
-                </p>
-            </div>
-        </div>
-        <hr>
-        <div id="exercisecontainer">
-            <p>
-                Here are some HTML, CSS and JavaScript exercises work on desktop and wide displays.
+        
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 mt-5 mb-3">
+                These are some HTML, CSS and JavaScript exercises, all work on large displays.
                 These are assignments from
                 <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>,
                 free online course for HTML/CSS and JavaScript basics.
-            </p>
-            <div id="exerciselist">
-                <div class="exercise">
-                    <h3>ETCH-A-SKETCH</h3>
-                    <img src="./assets/images/etch-a-sketch.png" alt="ETCH-A-SKETCH screenshot">
-                    <p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card my-2 pb-4 text-center border-0 shadow">
+                    <img src="./assets/images/etch-a-sketch.png" class="rounded" alt="ETCH-A-SKETCH screenshot">
+                    <h5 class="card-title mt-3">ETCH-A-SKETCH</h5>
+                    <p class="card-text px-2 text-start">
                         A simple coloring game with color picker and grid size selecter.
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
                     </p>
-                    <a href="https://codedlovely.github.io/etch-a-sketch/" target="_blank">
-                        Live demo
+                    <p>
+                        <span class="border border-dark rounded-pill px-2 me-1">HTML</span>
+                        <span class="border border-dark rounded-pill px-2 me-1">CSS</span>
+                        <span class="border border-dark rounded-pill px-2 me-1">JavaScript</span>
+                    </p>
+                    <a href="https://codedlovely.github.io/etch-a-sketch/" class="btn w-50 mx-auto my-1">
+                        view demo
                     </a>
-                    <a href="https://github.com/codedlovely/etch-a-sketch" target="_blank">
-                        Visit <i class="fa-brands fa-github"></i> repo
+                    <a href="https://github.com/codedlovely/etch-a-sketch" class="btn w-50 mx-auto my-1 linkRepo">
+                        visit repo
                     </a>
                 </div>
-                <div class="exercise">
-                    <h3>Rock Paper Scissors</h3>
-                    <img src="./assets/images/rock-paper-scissors.png" alt="Rock Paper Scissors screenshot">
-                    <p>
-                        Rock, Paper, Scissors game. You vs. computer.
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card my-2 pb-4 text-center border-0 shadow">
+                    <img src="./assets/images/rock-paper-scissors.png" class="rounded" alt="Rock Paper Scissors screenshot">
+                    <h5 class="card-title mt-3">Rock Paper Scissors</h5>
+                    <p class="card-text px-2 text-start">
+                        Rock, Paper, Scissors game.<br>You vs. computer.
                     </p>
-                    <a href="https://codedlovely.github.io/rock-paper-scissors/" target="_blank">
-                        Live demo
+                    <p>
+                        <span class="border border-dark rounded-pill px-2 me-1">HTML</span>
+                        <span class="border border-dark rounded-pill px-2 me-1">CSS</span>
+                        <span class="border border-dark rounded-pill px-2 me-1">JavaScript</span>
+                    </p>
+                    <a href="https://codedlovely.github.io/rock-paper-scissors/" class="btn w-50 mx-auto my-1">
+                        view demo
                     </a>
-                    <a href="https://github.com/codedlovely/rock-paper-scissors" target="_blank">
-                        Visit <i class="fa-brands fa-github"></i> repo
+                    <a href="https://github.com/codedlovely/rock-paper-scissors" class="btn w-50 mx-auto my-1 linkRepo">
+                        visit repo
                     </a>
                 </div>
-                <div class="exercise">
-                    <h3>Landing Page</h3>
-                    <img src="./assets/images/landingpage.png" alt="Landing page screenshot">
-                    <p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card my-2 pb-4 text-center border-0 shadow">
+                    <img src="./assets/images/landingpage.png" class="rounded" alt="Landing Page screenshot">
+                    <h5 class="card-title mt-3">Landing Page</h5>
+                    <p class="card-text px-2 text-start">
                         My very first exercise. A web page using basic HTML and CSS.
-                        <span>HTML</span>
-                        <span>CSS</span>
                     </p>
-                    <a href="https://codedlovely.github.io/landingpage-project/" target="_blank">
-                        Live demo
+                    <p>
+                        <span class="border border-dark rounded-pill px-2 me-1">HTML</span>
+                        <span class="border border-dark rounded-pill px-2 me-1">CSS</span>
+                    </p>
+                    <a href="https://codedlovely.github.io/landingpage-project/" class="btn w-50 mx-auto my-1">
+                        view demo
                     </a>
-                    <a href="https://github.com/codedlovely/landingpage-project" target="_blank">
-                        Visit <i class="fa-brands fa-github"></i> repo
+                    <a href="https://github.com/codedlovely/landingpage-project" class="btn w-50 mx-auto my-1 linkRepo">
+                        visit repo
                     </a>
                 </div>
             </div>
         </div>
+
     </div>
 
-    <div id="about">
+    <div class="container-fluid py-5" id="about">
         <h2>about</h2>
-        <p>
-            Hi there <i class="fa-solid fa-hand-spock"></i>
-        </p>
-        <p>
-            My name is Ai Kawasaki. I'm an aspiring front-end developer based in Japan,
-            currently seeking opportunities to turn my enthusiasm for coding into websites
-            that help people's everyday life.
-        </p>
-        <p>
-            I found my passion for web development, specifically for HTML/CSS coding,
-            when I started creating my personal website more than 20 years ago.
-            Since then, I've learned HTML/CSS and JavaScript
-            (occasionally PHP and other server side script) on my own,
-            and I'm still enthusiastically absorbing new technical information to expand my skill set.
-        </p>
-        <p>
-            I also have experience with
-            <span><i class="fa-solid fa-laptop-code"></i> VS Code</span>,
-            <span><i class="fa-brands fa-wordpress-simple"></i> WordPress</span>,
-            <span><i class="fa-solid fa-chart-line"></i> Tableau</span>,
-            <span><i class="fa-solid fa-person-chalkboard"></i> Presentation prep</span>.
-        </p>
-        <p>
-            When I'm not coding, I'm
-            <span><i class="fa-solid fa-person-running"></i> running</span>,
-            <span><i class="fa-solid fa-fish"></i> scuba diving</span>,
-            <span><i class="fa-solid fa-cake-candles"></i> baking</span>,
-            <span><i class="fa-solid fa-book-open-reader"></i> reading</span>,
-            <span><i class="fa-solid fa-guitar"></i> playing ukulele</span>,
-            <span><i class="fa-solid fa-music"></i> singing</span>.
-        </p>
-        <a class="resume" href="./assets/files/Resume AiKawasaki online.pdf" title="resume download" target="_blank">
-            download resume
-        </a>
-    </div>
 
-    <div id="contact">
-        <h2>contact</h2>
-        <p>Let's get in touch.</p>
-        <a href="mailto:hello@codedlovely.net">
-            Send an email <i class="fa-regular fa-envelope"></i>
-        </a>
-        <a href="https://github.com/codedlovely" target="_blank">
-            Collaborate on GitHub <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/aikawasaki/" target="_blank">
-            Visit LinkedIn profile <i class="fa-brands fa-linkedin"></i>
-        </a>
-    </div>
-
-    <div id="footer">
-        <div id="copyright">
-            <!---->
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+                <p class="mb-1">
+                    Hi there <i class="fa-solid fa-hand-spock"></i>
+                </p>
+                <p class="mb-5">
+                    My name is Ai Kawasaki. I'm a self-taught front-end developer based in Japan,
+                    currently seeking opportunities to turn my enthusiasm for coding into websites
+                    that help people's everyday life.
+                </p>
+                <p class="mb-5">
+                    I found my passion for web development, specifically for HTML/CSS coding,
+                    when I started creating my personal website more than 20 years ago.
+                    Since then, I've learned HTML/CSS and JavaScript
+                    (occasionally PHP and other server side script) on my own,
+                    and I'm still enthusiastically absorbing new technical information to expand my skill set.
+                </p>
+                <p class="mb-5">
+                    I also have experience with
+                    <span><i class="fa-solid fa-laptop-code"></i> VS Code</span>,
+                    <span><i class="fa-brands fa-wordpress-simple"></i> WordPress</span>,
+                    <span><i class="fa-solid fa-code"></i> Jekyll</span>,
+                    <span><i class="fa-solid fa-chart-line"></i> Tableau</span>,
+                    <span><i class="fa-solid fa-person-chalkboard"></i> Presentation prep</span>.
+                </p>
+                <p class="mb-5">
+                    When I'm not coding, I'm
+                    <span><i class="fa-solid fa-person-running"></i> running</span>,
+                    <span><i class="fa-solid fa-fish"></i> scuba diving</span>,
+                    <span><i class="fa-solid fa-cake-candles"></i> baking</span>,
+                    <span><i class="fa-solid fa-book-open-reader"></i> reading</span>,
+                    <span><i class="fa-solid fa-guitar"></i> playing ukulele</span>,
+                    <span><i class="fa-solid fa-music"></i> singing</span>.
+                </p>
+                <p class="text-center">
+                    <a class="btn mx-auto my-1 px-5 pb-2 rounded-pill" href="./assets/files/Resume AiKawasaki online.pdf" title="resume download" target="_blank">
+                        download resume
+                    </a>
+                </p>
+            </div>
         </div>
-        <ul id="footerlinks">
-            <li class="footerlink">
-                <a href="https://blog.codedlovely.net" title="My blog">
-                    <i class="fa-solid fa-globe"></i>
-                </a>
-            </li>
-            <li class="footerlink">
-                <a href="https://github.com/codedlovely" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
-            <li class="footerlink">
-                <a href="https://www.linkedin.com/in/aikawasaki/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </li>
-        </ul>
     </div>
-    
-    <button onclick="topFunction()" id="scrollBack" title="Scroll back to top">
-        <i class="fa-solid fa-angles-up"></i>
-    </button>
+
+    <div class="container-md py-5" id="contact">
+        <h2>contact</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
+                <p class="text-center">Let's get in touch.</p>
+                <a href="mailto:hello@codedlovely.net" class="text-center mb-3">
+                    Send an email <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="https://github.com/codedlovely" class="text-center mb-3" target="_blank">
+                    Collaborate on GitHub <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aikawasaki/" class="text-center mb-3" target="_blank">
+                    Visit LinkedIn profile <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5 footer">
+        <footer>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-4 text-center" id="copyright">
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <div class="col-md-6 text-center">
+                        <a href="https://blog.codedlovely.net" class="mx-2" data-bs-toggle="tooltip" title="My blog">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                        <a href="https://codepen.io/codedlovely" class="mx-2" data-bs-toggle="tooltip" title="CodePen" target="_blank">
+                            <i class="fa-brands fa-codepen"></i>
+                        </a>
+                        <a href="https://github.com/codedlovely" class="mx-2" data-bs-toggle="tooltip" title="GitHub" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aikawasaki/" class="mx-2" data-bs-toggle="tooltip" title="LinkedIn" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -6,3 +6,6 @@ I truly enjoy coding a website. So I want to share my passion for coding and fun
 Thanks🖖
 
 @codedlovely
+
+#### Photo credit
+[Photo by Corey Agopian on Unsplash](https://unsplash.com/photos/5y4ljzRrDFA "Photo by Corey Agopian on Unsplash")
