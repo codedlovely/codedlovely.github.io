@@ -189,7 +189,7 @@ footer a:hover {
     text-decoration: none;
 }
 
-button, *:focus, *:active {
+button, button:focus, button:active {
     border: 0 !important;
     outline: 0 !important;
     -webkit-appearance: none !important;
