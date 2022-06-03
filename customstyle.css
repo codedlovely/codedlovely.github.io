@@ -188,3 +188,10 @@ footer a {
 footer a:hover {
     text-decoration: none;
 }
+
+button, *:focus, *:active {
+    border: 0 !important;
+    outline: 0 !important;
+    -webkit-appearance: none !important;
+    box-shadow: none !important;
+}
